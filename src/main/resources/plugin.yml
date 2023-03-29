@@ -1,0 +1,19 @@
+name: rocketjump
+version: '${project.version}'
+main: com.person98.rocketjump.Rocketjump
+api-version: 1.19
+commands:
+  setknockback:
+    description: Sets the knockback intensity for firework explosions.
+    usage: /setknockback <intensity>
+  togglerocketdamage:
+    description: Toggles damage from rocket explosions.
+    usage: /togglerocketdamage
+
+permissions:
+  fireworkknockback.setknockback:
+    description: Allows setting the knockback intensity.
+    default: op
+  fireworkknockback.togglerocketdamage:
+    description: Allows toggling rocket explosion damage.
+    default: op
