@@ -42,8 +42,6 @@ public class FireworkExplosionListener implements Listener {
                         nearbyEntity.setVelocity(nearbyEntity.getVelocity().add(direction));
                     }
                 }
-                firework.getWorld().createExplosion(firework.getLocation(), plugin.getConfig().getBoolean("disable-rocket-damage") ? 0.0F : 1.0F, false, false);
-                firework.remove(); // Remove the firework entity.
             }
         }
     }
